@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.boxes {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-top: 50px;
+    margin-left: 50px;
+    align-items: center;
+}
+
+.box:hover {
+
+    transform: scale(0.5, 0.5) translate(1px, 1px);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: red;
+    transition: width 2s, height 5s, transform 4s, border-radius 2s;
+}
+
+@keyframes sliding {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+
+    100% {
+        background-color: red;
+    }
+
+}
+
+.circle {
+    height: 400px;
+    width: 100%;
+    background-color: aqua;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.circleA {
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+    background-color: red;
+    margin-left: 50px;
+
+
+
+}
+
+.circle:hover>.circleA {
+    transform: scale(0.7, 0.7) translate(1850px, 450px);
+    transition: border-radius 3s, transform 5s;
+    border-radius: 50%;
+    animation: sliding 3s ease-in-out 0.2s infinite alternate;
+}
+
+.circleB {
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+    background-color: red;
+    margin-right: 50px;
+
+
+}
+
+.circle:hover>.circleB {
+    transform: scale(0.7, 0.7) translate(-1850px, 450px);
+    transition: border-radius 3s, transform 5s;
+    border-radius: 50%;
+    animation: sliding 3s ease-in-out 0.2s infinite alternate;
+}
+
+.circle1 {
+    background-color: rgb(215, 172, 255);
+    margin-top: 50px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.circleC {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    top: 25px;
+
+}
+
+@keyframes up-down {
+    0% {
+        transform: scale(0.5, 0.5);
+
+    }
+
+    25% {
+        transform: scale(1, 1);
+        background-color: white;
+    }
+
+    75% {
+        transform: scale(0.5, 0.5);
+        background-color: red;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        background-color: blue;
+    }
+
+}
+
+.circle1:hover>.circleC {
+
+    animation: up-down 3s linear 0.2s infinite alternate;
+
+
+}
+
+
+
+.Big-C {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background-color: cornflowerblue;
+    margin-top: 50px;
+
+}
+
+.Big-C>.Big-C-box-a {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 10px;
+    margin-left: 280px;
+    position: relative;
+    top: 160px;
+
+}
+
+.Big-C>.Big-C-box-b {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 255, 42);
+    border-radius: 10px;
+    margin-left: 280px;
+    position: relative;
+    top: 180px;
+
+}
+
+.Big-C>.Big-C-box-c {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 0, 221);
+    border-radius: 10px;
+    margin-left: 280px;
+    position: relative;
+    top: 200px;
+
+}
+
+.Big-C>.Big-C-box-d {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(17, 0, 255);
+    border-radius: 10px;
+    margin-left: 280px;
+    position: relative;
+    top: 220px;
+
+}
+
+
+
+.Big-C:hover>.Big-C-box-a {
+    transform: translateX(-250px);
+    border-radius: 50%;
+    transition: border-radius 2s, transform 2s linear;
+}
+
+.Big-C:hover>.Big-C-box-b {
+    transform: translateX(265px);
+    border-radius: 50%;
+    transition: border-radius 2s, transform 2s linear;
+}
+
+.Big-C:hover>.Big-C-box-c {
+    transform: translateX(-275px);
+    border-radius: 50%;
+    transition: border-radius 2s, transform 2s linear;
+}
+
+
+.Big-C:hover>.Big-C-box-d {
+    transform: translateX(250px);
+    border-radius: 50%;
+    transition: border-radius 2s, transform 2s linear;
+}
