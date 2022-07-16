@@ -224,3 +224,36 @@ body {
     border-radius: 50%;
     transition: border-radius 2s, transform 2s linear;
 }
+
+.cricket {
+    margin-top: 200px;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(7, 78, 0);
+}
+
+.bat {
+    height: 400px;
+    width: 400px;
+}
+
+.cricket:hover>.bat {
+    transform: rotate(-55deg);
+    transform-origin: top;
+    transition: transform 0.5s ease-in;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 395px;
+    margin-top: -150px;
+    transition: transform 2s ease-out 0.5s;
+}
+
+.cricket:hover>.ball {
+    transform: translateX(700px) translateY(-400px);
+
+}
